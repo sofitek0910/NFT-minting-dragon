@@ -44,10 +44,6 @@ body {
     background-size: cover;
 }
 
-/* .about-section {
-    padding-top: 30px;
-} */
-
 /* Navbar  BEGIN */
 
 .navbar_logo {
@@ -491,13 +487,11 @@ body {
 }
 
 .top_data {
-    /* Phase one will begin with the activation of the Brobots. Activa */
     font-family: 'Rubik';
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 62px;
-    /* or 167% */
     display: flex;
     align-items: center;
     color: #FFFFFF;
