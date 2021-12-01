@@ -916,30 +916,6 @@ h4 {
 }
 
 
-
-/* @media only screen and (max-width: 1600px) {
-    .font_bgdefault {
-        font-size: 50px;
-    }
-    .font_bgundefault {
-        font-size: 50px;
-    }
-
-
-}
-
-@media only screen and (max-width: 1450px) {
-    .font_bgdefault {
-        font-size: 46px;
-    }
-    .font_bgundefault {
-        font-size: 50px;
-    }
-
-} */
-
-
-
 @media only screen and (max-width: 576px) {
     .pc {
         display: none;
