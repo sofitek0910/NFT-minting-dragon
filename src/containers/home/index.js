@@ -11,405 +11,292 @@ import {
 
 const Home = props => (
   <div>
-    <nav class="navbar container-fluid p-4 wow fadeInDown">
-        <a href="">
-            <div class="navbar_logo float-left main-grey">
-                <img class="logo-jocker" src="./assets/images/dragon_logo5.png"/> Dragon
+    <section className="pb-500 main-back">
+        <nav className="navbar container-fluid p-4 wow fadeInDown">
+            <a href="">
+                <div className="navbar_logo float-left main-grey">
+                    <img className="logo-jocker" src="./assets/images/design_logo6.png"/> Dragon
+                </div>
+            </a>
+            <div className="justify"><i className="fa fa-align-justify d-none"></i></div>
+            <div className="float-right navbar_right">
+                <button className="navbar_button btn mr-5 d-inline-block">CONNECT WALLET</button>
             </div>
-        </a>
-        <div className="justify"><i class="fa fa-align-justify d-none"></i></div>
-        <div class="float-right navbar_right">
-            <button class="navbar_button btn mr-5 d-inline-block">CONNECT WALLET</button>
+        </nav>
+        <div className="ad-text-block text-center">
+            <div className="ad-text1">10,000 Unique Dragons</div>
+            <div className="ad-text2">The Launch Date are Coming Soon!</div>
         </div>
-    </nav>
-    <section class="py-3">
-        <div class="row mx-0 px-0">
-            <div class="col-md-7 d-flex align-items-center">
-                <div class="pl-md-3">
-                    <div class="pb-md-3 wow fadeInUp">
-                        <span class="font_default">The First community Coin With Real Projects</span>
+        <div className="col-12 text-center wow zoomInUp mint-button-block">
+            <button className="mint_button btn mt-5">MINTING</button>
+        </div>
+    </section>
+
+    <section className="about-section">
+        <div className="col-12 text-center d-flex justify-content-center">
+            <span className="section_title line-height-15">WELCOME TO OUR NFTS</span>
+        </div>
+        <div className="row mx-0 px-0 py-5">
+            <div className="col-md-7 d-flex align-items-center">
+                <div className="pl-md-3">
+                    <div className="py-xl-5 py-md-3 py-2  wow fadeInUp ">
+                        <span className="font_bgdefault line-height-15 headline-font">ABOUT THE</span> &nbsp;&nbsp;&nbsp;<span className="font_bgundefault line-height-15">LUCKY DRAGON</span>
                     </div>
-                    <div class="py-xl-5 py-md-3 py-2  wow fadeInUp ">
-                        <span class="font_bgdefault line-height-15">ABOUT THE</span> &nbsp;&nbsp;&nbsp;<span class="font_bgundefault line-height-15">JOCKERCOIN</span>
-                    </div>
-                    <div class="pt-md-3  wow fadeInUp">
-                        <span class="font_general line-height-18">
-                            Joker is a coin created by a development team of 16 people who are behind the creation of an e-game peer-to-peer card game called JokerBank. Joker is based on a community of people, but unlike regular fun coins, the Joker has a clear purpose and vision.
+                    <div className="pt-md-3  wow fadeInUp">
+                        <span className="font_general line-height-18">
+                            The LuckyDragon is a collection of 10,000 generative Mekas with hundreds of elements inspired by Lucky Dragon taam.<br/>
+                            Each artwork is original, with its own color palette and creation. The objective was to make each Meka unique in order to prioritize quality above quantity.
                         </span>
                     </div>
-                    <div class="col-12 text-center wow zoomInUp">
-                        <button class="mint_button btn mt-5">MINT</button>
-                    </div>
+                </div>
+            </div>
+            <div className="col-md-5 mt-md-0 mt-5 pr-5 mr-0 wow rubberBand">
+                <div>
+                    <img className="img-thumbnail" src="./assets/images/dragon.jpg" className="w-100"/>
                 </div>
             </div>
         </div>
     </section>
-    <section class="slide-container my-5">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./assets/media/character1.jpeg" alt=""/>
+
+    <section className="slide-container my-5">
+        <div className="col-12 text-center d-flex justify-content-center">
+            <span className="section_title line-height-15">LUCKY DRAGON</span>
+        </div>
+        <div className="swiper mySwiper">
+            <div className="swiper-wrapper">
+                <div className="swiper-slide">
+                    <img src="./assets/images/dragon.jpg" alt=""/>
                 </div>
-                <div class="swiper-slide">
-                    <img src="./assets/media/character2.jpeg" alt=""/>
+                <div className="swiper-slide">
+                    <img src="./assets/images/dragon1.png" alt=""/>
                 </div>
-                <div class="swiper-slide">
-                    <img src="./assets/media/character3.jpeg" alt=""/>
+                <div className="swiper-slide">
+                    <img src="./assets/images/dragon2.png" alt=""/>
                 </div>
-                <div class="swiper-slide">
-                    <img src="./assets/media/character4.jpeg" alt=""/>
+                <div className="swiper-slide">
+                    <img src="./assets/images/dragon.jpg" alt=""/>
                 </div>
-                <div class="swiper-slide">
-                    <img src="./assets/media/character5.jpeg" alt=""/>
+                <div className="swiper-slide">
+                    <img src="./assets/images/dragon1.png" alt=""/>
+                </div>
+                <div className="swiper-slide">
+                    <img src="./assets/images/dragon2.png" alt=""/>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div className="swiper-pagination"></div>
         </div>
     </section>
-    <div class="col-12 text-center d-flex justify-content-center">
-        <span class="roadmap_title wow fadeInUp">The ROADMAP</span>
+
+    <div className="col-12 text-center d-flex justify-content-center">
+        <span className="section_title gtfcduyjdc wow fadeInUp">THE ROADMAP</span>
     </div>
-    <section class="roadmap pb-5">
-        <div class="roadmap_title_back"></div>
-        <div class="top_one container-fluid mt-5 roadmap-padding">
-            <div class="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
-                <div class="col-md-8">
-                    <div class="row rounded roadmap_round py-4">
-                        <div class="col-md-1 col-2 d-inline dot_data p-0">
-                            <span class="dot"></span>
+    <section className="roadmap pb-5">
+        <div className="roadmap_title_back"></div>
+        <div className="top_one container-fluid mt-5 roadmap-padding">
+            <div className="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
+                <div className="col-md-12">
+                    <div className="row rounded roadmap_round py-4">
+                        <div className="col-md-1 col-2 d-inline dot_data p-0">
+                            <span className="dot"></span>
                         </div>
-                        <div class="col-md-11 col-10 d-inline mt-4">
-                            <div class="">
-                                <span class="top_title_num roadmap_font"> </span><span class="top_title">Q1</span>
+                        <div className="col-md-11 col-10 d-inline mt-4">
+                            <div className="">
+                                <span className="top_title_num roadmap_font"> </span><span className="top_title">Launch Roadmap</span>
                             </div>
-                            <div class="top_data">
-                              <div>1. The first implementation of the Joker IRL – functional colaborations with first providers in the central Europe.</div>
-                              <div> 2. Offline marketing in Europe, online marketing in the whole world </div>
-                              <div> 3. Announcement of the visions and functions of the app </div>
-                              <div>4. TBA collaboration 3 </div>
-                              <div>5. The full version of the second game (TBA)</div>  
+                            <div className="top_data">
+                                Quality comes first. The goal is to make our first drop as cool 
+                                as possible so we can have freedom to develop the universe. 
+                                We're still working on a number of rarity criteria, as well as a lot of new Lore concepts. 
+                                The drop release date will be announced as soon as the project's quality and technical aspects are fully progressed. 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                    <img class="w-75 pc" src="./assets/images/main/Community1.png"/>
-                    <img class="w-50 sp mt-3" src="./assets/images/main/Community1.png"/>
+                {/* <div className="col-md-4 d-flex align-items-center justify-content-center">
+                    <img className="w-75 pc" src="./assets/images/main/Community1.png"/>
+                    <img className="w-50 sp mt-3" src="./assets/images/main/Community1.png"/>
+                </div> */}
+            </div>
+            <div className="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
+                <div className="col-md-12">
+                    <div className="row rounded roadmap_round py-4">
+                        <div className="col-md-1 col-2 d-inline dot_data p-0">
+                            <span className="dot"></span>
+                        </div>
+                        <div className="col-md-11 col-10 d-inline mt-4">
+                            <div className="">
+                                <span className="top_title_num roadmap_font"></span><span className="top_title">Physical Part</span>
+                            </div>
+                            <div className="top_data">
+                                Mekas have a huge potential as physical creations. 
+                                We are passionate about 3D printing and want to bring our concept to life with high-quality materials. 
+                                After several talks with famous art toys makers, we are currently working on some concepts but wait, 
+                                let’s keep a little mystery for the moment! We also aim to create clothing and merchandise using high-quality materials and textiles with eco-friendly fabrics. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* <div className="col-md-4 d-flex align-items-center justify-content-center">
+                    <img className="w-75 pc" src="./assets/images/main/Charity1.png"/>
+                    <img className="w-50 sp mt-3" src="./assets/images/main/Charity1.png"/>
+                </div> */}
+            </div>
+            <div className="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
+                <div className="col-md-12">
+                    <div className="row rounded roadmap_round py-3">
+                        <div className="col-md-1 col-2 d-inline dot_data p-0">
+                            <span className="dot"></span>
+                        </div>
+                        <div className="col-md-11 col-10 d-inline mt-4">
+                            <div className="">
+                                <span className="top_title_num roadmap_font"> </span><span className="top_title">LUCKYDRAGON ARTISTS</span>
+                            </div>
+                            <div className="top_data">
+                                We know a lot of artists in the NFT community and beyond! We'd like to develop a series 
+                                in which each dragon is made in collaboration with artists we like and under their artistic direction. 
+                                We would create a small collection of 1/1 unique dragons by artists, with all proceeds going to them! 
+                                This collection is incredibly important to us, and we are excited to see what we can accomplish together!
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
-                <div class="col-md-7">
-                    <div class="row rounded roadmap_round py-4">
-                        <div class="col-md-1 col-2 d-inline dot_data p-0">
-                            <span class="dot"></span>
+            <div className="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
+                <div className="col-md-12">
+                    <div className="row rounded roadmap_round py-4">
+                        <div className="col-md-1 col-2 d-inline dot_data p-0">
+                            <span className="dot"></span>
                         </div>
-                        <div class="col-md-11 col-10 d-inline mt-4">
-                            <div class="">
-                                <span class="top_title_num roadmap_font"></span><span class="top_title">Q2</span>
+                        <div className="col-md-11 col-10 d-inline mt-4">
+                            <div className="">
+                                <span className="top_title_num roadmap_font"> </span><span className="top_title">LUCKYDRAGON TAKEOVER</span>
                             </div>
-                            <div class="top_data">
-                                <div>1. Closed - Beta app version </div>
-                                <div>2. Introducing of the JokerCam (implementation of JokerCoin, anonymity, creators support, ...)</div>
-                                <div>3. Implementation of the coin into the leisure time - adults life ( events, massages, …)</div>
-                                <div>4. The third game announcement (TBA)</div>
-                                <div>5. Extension from the Central Europe to the whole of Europe (ambassadors, collaborations with companies - setting up a team in all the countries, telegram of the group)</div>
-                                <div> 6. Fork of the Joker Coin on another coin – all the holders get a new coin</div>
+                            <div className="top_data">
+                                A multi-city AD takeover will commence highlighting Yellow Giants of some of the most active YGS community members. 
+                                Creatives from the Yellow Giant community will also be commissioned for this campaign, 
+                                bringing value to Yellow Giant holders, derivatives artists, and the greater YGS community.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 d-flex align-items-center justify-content-center">
-                    <img class="w-75 pc" src="./assets/images/main/Charity1.png"/>
-                    <img class="w-50 sp mt-3" src="./assets/images/main/Charity1.png"/>
-                </div>
+                {/* <div className="col-md-4 d-flex align-items-center justify-content-center">
+                    <img className="w-75 pc" src="./assets/images/main/Diamond1.png"/>
+                    <img className="w-75 sp mt-3" src="./assets/images/main/Diamond1.png"/>
+                </div> */}
             </div>
-            <div class="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
-                <div class="col-md-8">
-                    <div class="row rounded roadmap_round py-4">
-                        <div class="col-md-1 col-2 d-inline dot_data p-0">
-                            <span class="dot"></span>
+            <div className="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
+                <div className="col-md-12">
+                    <div className="row rounded roadmap_round py-4">
+                        <div className="col-md-1 col-2 d-inline dot_data p-0">
+                            <span className="dot"></span>
                         </div>
-                        <div class="col-md-11 col-10 d-inline mt-4">
-                            <div class="">
-                                <span class="top_title_num roadmap_font"> </span><span class="top_title">Q3</span>
+                        <div className="col-md-11 col-10 d-inline mt-4">
+                            <div className="">
+                                <span className="top_title_num roadmap_font"></span><span className="top_title">Future of Dragons</span>
                             </div>
-                            <div class="top_data">
-                              <div>1. Beta version of JokerCam</div>
-                              <div>2. Launch of focus on the connection to the IRL monetary system</div>
-                              <div>3. The annual anniversary of JokerCoin - spectacular giveaway</div>
-                              <div>4. Beta version of the third game (TBA)</div>
-                              <div>5. The annual recapitulation and the start of a global campaign with results so far</div>
-                              <div>6. Open - beta app</div>
-                              <div>7. Partner implementation from the whole Europe</div>
+                            <div className="top_data">
+                                When all of these stages are completed, we’ll take care of maintaining the Meka Universe. 
+                                We both come from the design industry, and we are truly passionate about Art, Short films, 
+                                Physical and Digital Exploration, and we would like to explore even more, with the desire to 
+                                always make events more impressive and ambitious.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                    <img class="w-75 pc" src="./assets/images/main/Diamond1.png"/>
-                    <img class="w-75 sp mt-3" src="./assets/images/main/Diamond1.png"/>
-                </div>
-            </div>
-            <div class="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
-                <div class="col-md-8">
-                    <div class="row rounded roadmap_round py-4">
-                        <div class="col-md-1 col-2 d-inline dot_data p-0">
-                            <span class="dot"></span>
-                        </div>
-                        <div class="col-md-11 col-10 d-inline mt-4">
-                            <div class="">
-                                <span class="top_title_num roadmap_font"></span><span class="top_title">Q4</span>
-                            </div>
-                            <div class="top_data">
-                                <div>1. The full version of JokerCam </div>
-                                <div>2. The full version of Joker App </div>
-                                <div>3. Announcement of the fourth game (TBA) </div>
-                                <div>4. Pornstar influencer marketing </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                    <img src="./assets/images/main/Future1.png" class="w-75 pc"/>
-                    <img src="./assets/images/main/Future1.png" class="w-50 sp mt-3"/>
-                </div>
+                {/* <div className="col-md-4 d-flex align-items-center justify-content-center">
+                    <img src="./assets/images/main/Future1.png" className="w-75 pc"/>
+                    <img src="./assets/images/main/Future1.png" className="w-50 sp mt-3"/>
+                </div> */}
             </div>
         </div>
     </section>
-    <section class="common mt-5 container-fluid p-0 position-relative">
-        <div class="common_title justify-content-center wow zoomInUp">
-            Coming soon
-        </div>
-        <div class="wow zoomInUp d-flex justify-content-center common_subtitle" >
-            <div class="mt-2 d-flex align-items-center justify-content-center">
-                THE ANTIWHALE SYSTEM TO PROTECT OUR HOLDERS!
-                <img src="./assets/media/jocker_coin2.jpg" class="ml-4 em-image"/>
-            </div>
-        </div>
-        <div class="common_back mt-5 pt-md-5">
-            <div class=" mx-0 mt-5 pt-md-5 align-items-end d-flex">
-                <div class="p-0 bot-one">
-                    <img src="./assets/media/road1.png" class="w-100 wow fadeInRight" data-wow-delay="1.6s"/>
-                </div>
-                <div class="p-0 bot-two">
-                    <img src="./assets/media/road2.jpg" class="w-100 wow fadeInRight" data-wow-delay="0.5s"/>
-                </div>
-                <div class="px-2 bot-three">
-                    <img src="./assets/media/road3.jpg" class="w-100 wow fadeInLeft" data-wow-delay="0.3s"/>
-                </div>
-                <div class="bot-four">
-                    <img src="./assets/media/road4.jpg" class="w-100 wow fadeInRight" data-wow-delay="0.3s"/>                    
-                </div>
-                <div class="px-1 bot-five">
-                    <img src="./assets/media/road5.jpg" class="w-100 wow fadeInLeft" data-wow-delay="1.4s"/>
-                </div>
-                <div class="p-0 bot-six">
-                    <img src="./assets/media/road6.png" class="w-100 wow fadeInLeft" data-wow-delay="1s"/>
-                </div>
-            </div>
-        </div>
-        <img class="common_bg_image" src="./assets/images/add_images/background.png" alt=""/>
-    </section>
 
-
-    <section class="container-fluid meet-section add-padding mt-5 mb-5 pt-5">
-        <div class="common_title col-12 justify-content-center wow fadeInUp">
-            The Team
+    <section className="container-fluid meet-section add-padding mb-5">
+        <div className="col-12 text-center d-flex justify-content-center">
+            <span className="section_title gtfcduyjdc wow fadeInUp">MEET THE TEAM</span>
         </div>
-        <div class="mt-5">
-            <div class="row">
-                <div class="col-md-3 mt-4">
-                    <img class="w-100 wow slideInLeft" src="./assets/media/prt_dep_alessandro.png" alt=""/>
+        <div className="mt-5">
+            <div className="row white_font_color">
+                <div className="col-md-3 mt-4">
+                    <img className="w-100 wow slideInLeft" src="./assets/images/prt_dep_alessandro.png" alt=""/>
                 </div>
-                <div class="col-md-9 mt-4 wow slideInRight pr-0">
-                    <h2 class="rubik-font">
-                        CEO Alessandro
+                <div className="col-md-9 mt-4 wow slideInRight pr-0">
+                    <h2 className="rubik-font">
+                        CEO David
                     </h2>
-                    <p class="rubik-font">
-                        The visionary and also the mediator of the Joker’s will. A cryptocurrencies enthusiast since 2015. He entered the IT world as a designer and a visionary of lottery and gambling games.
+                    <p className="rubik-font">
+                        The visionary and also the mediator of the LuckyDragon. A cryptocurrencies enthusiast since 2015. He entered the IT world as a designer and a visionary of lottery and gambling games.
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 mt-4">
-                    <img class="w-100 wow slideInLeft" src="./assets/media/prt_dep_tom.png" alt=""/>
+            <div className="row white_font_color">
+                <div className="col-md-3 mt-4">
+                    <img className="w-100 wow slideInLeft" src="./assets/images/prt_dev_pavel2.png" alt=""/>
                 </div>
-                <div class="col-md-9 mt-4 wow slideInRight pr-0">
-                    <h2 class="rubik-font">
-                        Tom
-                    </h2>
-                    <p class="rubik-font">
-                        Young baron of crypto. He takes care of designing functions and features in our contract and later will help with designing the dapps and implementing them to our platforms. Also core member of marketing team and social networks freak.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 mt-4">
-                    <img class="w-100 wow slideInLeft" src="./assets/media/prt_dep_robert.png" alt=""/>
-                </div>
-                <div class="col-md-9 mt-4 wow slideInRight pr-0">
-                    <h2 class="rubik-font">
+                <div className="col-md-9 mt-4 wow slideInRight pr-0">
+                    <h2 className="rubik-font">
                         Robert
                     </h2>
-                    <p class="rubik-font">
-                        One the first persons involved in development of JokerBank. His focus is mostly on lottery and card games, but dont be scared, he is not a gambler, but only developer.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 mt-4">
-                    <img class="w-100 wow slideInLeft" src="./assets/media/prt_dev_pavel.png" alt=""/>
-                </div>
-                <div class="col-md-9 mt-4 wow slideInRight pr-0">
-                    <h2 class="rubik-font">
-                        Pavel
-                    </h2>
-                    <p class="rubik-font">
-                        guru and maniac in the binary world, programmer
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 mt-4">
-                    <img class="w-100 wow slideInLeft" src="./assets/media/prt_dev_ales.png" alt=""/>
-                </div>
-                <div class="col-md-9 mt-4 wow slideInRight pr-0">
-                    <h2 class="rubik-font">
-                        Ales
-                    </h2>
-                    <p class="rubik-font">
-                        genius of game models and combinations, programmer
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 mt-4">
-                    <img class="w-100 wow slideInLeft" src="./assets/media/prt_dev_jan.png" alt=""/>
-                </div>
-                <div class="col-md-9 mt-4 wow slideInRight pr-0">
-                    <h2 class="rubik-font">
-                        Jan
-                    </h2>
-                    <p class="rubik-font">
-                        input/output superhero, communication, servers, multiplayer, programmer
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 mt-4">
-                    <img class="w-100 wow slideInLeft" src="./assets/media/prt_dev_johny.png" alt=""/>
-                </div>
-                <div class="col-md-9 mt-4 wow slideInRight pr-0">
-                    <h2 class="rubik-font">
-                        Johny
-                    </h2>
-                    <p class="rubik-font">
-                        data specialist and conceptual engineer, database and API, star of nervous system
+                    <p className="rubik-font">
+                        One the first persons involved in full development of LuckyDragon. His focus is mostly on lottery and card games, but dont be scared, he is not a gambler, but only developer.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-qa">
-        <div class="title">
-            <h2 class="text-center text-white wow fadeInUp">Frequently asked questions</h2>
+    <section className="section-qa">
+        <div className="title">
+            <h2 className="text-center text-white wow fadeInUp">FAQS</h2>
         </div>
-        <div class="content container-fluid mt-md-5 mt-4 footer-padding">
-            <div class="mt-3 accordion-container footer_round">
-                <button class="accordion py-2">
-                    <h1 class="footer-font">Is the team doxed?</h1>
+        <div className="content container-fluid mt-md-5 mt-4 footer-padding">
+            <div className="mt-4 accordion-container footer_round">
+                <button className="accordion py-2">
+                    <h1 className="footer-font">What is LuckyDragon?</h1>
                 </button>
-                <div class="panel">
-                    <p>Yes, at the moment we have made the “soft doxx”, but we are looking to make full doxx in the future. 
-                        Actually there are revealed the main persons of the team, since we have still 16+ members of team.</p>
+                <div className="panel">
+                    <p>LuckyDragon is about the building the community on base ground of real product which are merch, app and NFT.</p>
                 </div>
             </div>
-            <div class="mt-4 accordion-container footer_round">
-                <button class="accordion py-2">
-                    <h1 class="footer-font">What is Joker? What is Joker and JokerCoin about??</h1>
+            <div className="mt-4 accordion-container footer_round">
+                <button className="accordion py-2">
+                    <h1 className="footer-font">How much is the mint?</h1>
                 </button>
-                <div class="panel">
-                    <p>Joker is about the building the community on base ground of real product which are games, merch, app and NFT. JokerCoin is cryptocurrency 
-                        based on BNB smart chain with special features to support our community and products</p>
+                <div className="panel">
+                    <p>Presale mint price will be 0.08ETH and public mint price will be 0.2ETH. </p>
                 </div>
             </div>
-            <div class="mt-4 accordion-container footer_round">
-                <button class="accordion py-2">
-                    <h1 class="footer-font">How do I get the JokerCoins?</h1>
+            <div className="mt-4 accordion-container footer_round">
+                <button className="accordion py-2">
+                    <h1 className="footer-font">When is the launch?</h1>
                 </button>
-                <div class="panel">
-                    <p>You can get JokerCoin on pancakeswap and other DEXes which will be listed soon!</p>
+                <div className="panel">
+                    <p>Our official mint date is January 1st 2022 at 2:00PM EST.</p>
                 </div>
             </div>
-            <div class="mt-4 accordion-container footer_round">
-                <button class="accordion py-2">
-                    <h1 class="footer-font">Are there any fees?</h1>
+            <div className="mt-4 accordion-container footer_round">
+                <button className="accordion py-2">
+                    <h1 className="footer-font">Is there a whitelist?</h1>
                 </button>
-                <div class="panel">
-                    <p>Jokercoin applies 12% fees which are fully described in the fifth page “LOTTERY”</p>
+                <div className="panel">
+                    <p>Yes, we are going to make whitelist.</p>
                 </div>
             </div>
-            <div class="mt-4 accordion-container footer_round">
-                <button class="accordion py-2">
-                    <h1 class="footer-font">What is JokerCoin lottery system?</h1>
+            <div className="mt-4 accordion-container footer_round">
+                <button className="accordion py-2">
+                    <h1 className="footer-font">Can you add more FAQ from community?</h1>
                 </button>
-                <div class="panel">
-                    <p>Unique algorithm system that rewards Jokercoin buyers. For more information please check the fifth page LOTTERY or WHITEPAPER.</p>
+                <div className="panel">
+                    <p>Sure, in case of any unanswered question please contact sunshine09101@gmail.com.</p>
                 </div>
             </div>
-            <div class="mt-4 accordion-container footer_round">
-                <button class="accordion py-2">
-                    <h1 class="footer-font">Will be JokerCoin listed on any centralized exchanges? (CEX)</h1>
-                </button>
-                <div class="panel">
-                    <p>Jokers plan is to be seen everywhere! As soon as there will be an opportunity, he will take it.</p>
-                </div>
-            </div>
-            <div class="mt-4 accordion-container footer_round">
-                <button class="accordion py-2">
-                    <h1 class="footer-font">Is there a stacking feature?</h1>
-                </button>
-                <div class="panel">
-                    <p>Yes, JokerCoin coin applies 5% sell fee which is redistributed among all holders. The more you own, the more you get.</p>
-                </div>
-            </div>
-            <div class="mt-4 accordion-container footer_round">
-                <button class="accordion py-2">
-                    <h1 class="footer-font">What about the other games?</h1>
-                </button>
-                <div class="panel">
-                    <p>The JokerBank game is already in beta-verse and 95% working. Right now we are starting to focus on the second game, 
-                        which is going to be announced very soon and hopefully during this year you guys will be able to play the beta verse. 
-                        Of course we have many more ideas, but we are not here to make easy trash game with no idea like the 
-                        others do. We are here to develop new and professional projects with huge potential. Stay tuned!</p>
-                </div>
-            </div>
-            <div class="mt-4 accordion-container footer_round">
-                <button class="accordion py-2">
-                    <h1 class="footer-font">Where are you heading? What is your goal?
-                    </h1>
-                </button>
-                <div class="panel">
-                    <p>Our goal is specified in our White Paper. Simply, it is about building the community
-                        based on the Jokers lifestyle, which includes card games, nightlife, sex, guns and many more entertaining things!
-                    </p>
-                </div>
-            </div>
-            <div class="mt-4 accordion-container footer_round">
-                <button class="accordion py-2">
-                    <h1 class="footer-font">Can you add more FAQ from community?</h1>
-                </button>
-                <div class="panel">
-                    <p>Sure, in case of any unanswered question please contact hello@jokercoin.live.</p>
-                </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-center mt-5">
+            <h4 class="font-calibri text-white mt-2 text-center mt-5">© All Rights Reserved 2021</h4>
+            <div className="d-flex align-items-center justify-content-center mt-5">
                 <a href="">
-                    <img class="social_footer_image" src="./assets/images/twitter_white_icon.png" alt=""/>
+                    <img className="social_footer_image" src="./assets/images/twitter_white_icon.png" alt=""/>
                 </a>
                 <a href="">
-                    <img class="social_footer_image" src="./assets/images/discord_white_icon.png" alt=""/>
+                    <img className="social_footer_image" src="./assets/images/discord_white_icon.png" alt=""/>
                 </a>
             </div>
         </div>
