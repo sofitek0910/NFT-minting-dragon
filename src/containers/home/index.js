@@ -15,16 +15,16 @@ const Home = props => (
         <nav className="navbar container-fluid p-4 wow fadeInDown">
             <a href="">
                 <div className="navbar_logo float-left main-grey">
-                    <img className="logo-jocker" src="./assets/images/design_logo6.png"/> Dragon
+                    <img className="logo-dragon" src="./assets/images/dragon_logo.png"/> Dragon
                 </div>
             </a>
             <div className="justify"><i className="fa fa-align-justify d-none"></i></div>
             <div className="float-right navbar_right">
-                <button className="navbar_button btn mr-5 d-inline-block">CONNECT WALLET</button>
+                <button className="navbar_button btn mr-3 d-inline-block">CONNECT WALLET</button>
             </div>
         </nav>
         <div className="ad-text-block text-center">
-            <div className="ad-text1">10,000 Unique Dragons</div>
+            <div className="ad-text1 section_title">10,000 Unique Dragons</div>
             <div className="ad-text2">The Launch Date are Coming Soon!</div>
         </div>
         <div className="col-12 text-center wow zoomInUp mint-button-block">
@@ -37,7 +37,7 @@ const Home = props => (
             <span className="section_title line-height-15">WELCOME TO OUR NFTS</span>
         </div>
         <div className="row mx-0 px-0 py-5">
-            <div className="col-md-7 d-flex align-items-center">
+            <div className="col-md-7 d-flex align-items-center text-center">
                 <div className="pl-md-3">
                     <div className="py-xl-5 py-md-3 py-2  wow fadeInUp ">
                         <span className="font_bgdefault line-height-15 headline-font">ABOUT THE</span> &nbsp;&nbsp;&nbsp;<span className="font_bgundefault line-height-15">LUCKY DRAGON</span>
@@ -50,37 +50,43 @@ const Home = props => (
                     </div>
                 </div>
             </div>
-            <div className="col-md-5 mt-md-0 mt-5 pr-5 mr-0 wow rubberBand">
+            <div className="col-md-5 mt-md-0 mt-5 mr-0 wow rubberBand">
                 <div>
-                    <img className="img-thumbnail" src="./assets/images/dragon.jpg" className="w-100"/>
+                    <img className="img-thumbnail" src="./assets/images/character.gif" className="w-100"/>
                 </div>
             </div>
         </div>
     </section>
 
-    <section className="slide-container my-5">
+    <section className="slide-container">
         <div className="col-12 text-center d-flex justify-content-center">
             <span className="section_title line-height-15">LUCKY DRAGON</span>
         </div>
         <div className="swiper mySwiper">
             <div className="swiper-wrapper">
                 <div className="swiper-slide">
-                    <img src="./assets/images/dragon.jpg" alt=""/>
+                    <img className="slide_image img-thumbnail" src="./assets/images/dragon1.png" alt=""/>
                 </div>
                 <div className="swiper-slide">
-                    <img src="./assets/images/dragon1.png" alt=""/>
+                    <img className="slide_image img-thumbnail" src="./assets/images/dragon2.png" alt=""/>
                 </div>
                 <div className="swiper-slide">
-                    <img src="./assets/images/dragon2.png" alt=""/>
+                    <img className="slide_image img-thumbnail" src="./assets/images/dragon3.png" alt=""/>
                 </div>
                 <div className="swiper-slide">
-                    <img src="./assets/images/dragon.jpg" alt=""/>
+                    <img className="slide_image img-thumbnail" src="./assets/images/dragon4.png" alt=""/>
                 </div>
                 <div className="swiper-slide">
-                    <img src="./assets/images/dragon1.png" alt=""/>
+                    <img className="slide_image img-thumbnail" src="./assets/images/dragon5.png" alt=""/>
                 </div>
                 <div className="swiper-slide">
-                    <img src="./assets/images/dragon2.png" alt=""/>
+                    <img className="slide_image img-thumbnail" src="./assets/images/dragon6.png" alt=""/>
+                </div>
+                <div className="swiper-slide">
+                    <img className="slide_image img-thumbnail" src="./assets/images/dragon7.png" alt=""/>
+                </div>
+                <div className="swiper-slide">
+                    <img className="slide_image img-thumbnail" src="./assets/images/dragon8.png" alt=""/>
                 </div>
             </div>
             <div className="swiper-pagination"></div>
@@ -216,38 +222,38 @@ const Home = props => (
             <span className="section_title gtfcduyjdc wow fadeInUp">MEET THE TEAM</span>
         </div>
         <div className="mt-5">
-            <div className="row white_font_color">
+            <div className="row white_font_color team_block">
                 <div className="col-md-3 mt-4">
                     <img className="w-100 wow slideInLeft" src="./assets/images/prt_dep_alessandro.png" alt=""/>
                 </div>
                 <div className="col-md-9 mt-4 wow slideInRight pr-0">
-                    <h2 className="rubik-font">
+                    <div className="rubik-font member_name">
                         CEO David
-                    </h2>
-                    <p className="rubik-font">
+                    </div>
+                    <div className="rubik-font member_desc">
                         The visionary and also the mediator of the LuckyDragon. A cryptocurrencies enthusiast since 2015. He entered the IT world as a designer and a visionary of lottery and gambling games.
-                    </p>
+                    </div>
                 </div>
             </div>
-            <div className="row white_font_color">
+            <div className="row white_font_color team_block">
                 <div className="col-md-3 mt-4">
                     <img className="w-100 wow slideInLeft" src="./assets/images/prt_dev_pavel2.png" alt=""/>
                 </div>
                 <div className="col-md-9 mt-4 wow slideInRight pr-0">
-                    <h2 className="rubik-font">
+                    <div className="rubik-font member_name">
                         Robert
-                    </h2>
-                    <p className="rubik-font">
+                    </div>
+                    <div className="rubik-font member_desc">
                         One the first persons involved in full development of LuckyDragon. His focus is mostly on lottery and card games, but dont be scared, he is not a gambler, but only developer.
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section className="section-qa">
-        <div className="title">
-            <h2 className="text-center text-white wow fadeInUp">FAQS</h2>
+        <div className="col-12 text-center d-flex justify-content-center">
+            <span className="section_title gtfcduyjdc wow fadeInUp">FAQS</span>
         </div>
         <div className="content container-fluid mt-md-5 mt-4 footer-padding">
             <div className="mt-4 accordion-container footer_round">

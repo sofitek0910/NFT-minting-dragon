@@ -59,6 +59,8 @@ body {
 }
 
 .ad-text1 {
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 60px;
     color: #fff;
     font-family: 'headlinefont';
@@ -146,42 +148,32 @@ body {
     display: none;
 }
 
-.logo-jocker {
+.logo-dragon {
     width: 30%;
+}
+
+.section_title{
+    font-family: 'headlinefont';
+    margin-top: 40px;
+    padding-top: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.img-thumbnail {
+    background-color: #9c0bf0;
+    border-color: rgb(81, 23, 88);
+}
+
+.slide_image {
+    /* border: 5px solid #9c0bf0; */
 }
 
 /* button animation */
 
-@media only screen and (max-width:1366px) {
-    .navbar_logo {
-        font-size: 50px;
-        line-height: 50px;
-    }
-    .navbar_button {
-        font-size: 14px;
-        line-height: 36px;
-    }
-}
-
-@media only screen and (max-width:780px) {
-    .navbar_logo {
-        font-size: 40px;
-        line-height: 40px;
-    }
-    .navbar_right {
-        display: none;
-    }
-    .fa-align-justify {
-        display: inline-block!important;
-    }
-}
-
-@media only screen and (max-width:576px) {
-    .navbar_logo {
-        font-size: 32px;
-        line-height: 32px;
-    }
-}
 
 
 /* Navbar END */
@@ -228,7 +220,7 @@ body {
 
 .font_general {
     color: #fff;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 40px;
     /* font-family: 'Rubik'; */
     font-style: normal;
@@ -272,10 +264,51 @@ body {
     color: #fff;
 }
 
+.member_name {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.member_desc {
+    font-size: 26px;
+}
+
+.team_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* button animation */
 
 @media only screen and (max-width:1366px) {
+    .navbar_logo {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .navbar_button {
+        font-size: 14px;
+        line-height: 36px;
+    }
+    .top_title {
+        font-size: 41px;
+        /* line-height: 78px; */
+    }
+    .top_title_num {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .top_data {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .dot {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.53);
+        padding: 3px 13px;
+        border-radius: 50%;
+    }
     .font_default {
         font-size: 24px;
         line-height: 40px;
@@ -285,65 +318,141 @@ body {
         line-height: 40px;
     }
     .font_bgdefault {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 38px;
+        line-height: 38px;
     }
     .font_bgundefault {
         font-size: 40px;
         line-height: 40px;
     }
     .font_general {
-        font-size: 20px;
+        font-size: 26px;
         line-height: 25px;
     }
     .mint_button {
         font-size: 26px;
         line-height: 38px;
     }
+    .section_title{
+        font-size: 68px;
+        line-height: 68px;
+    }
 }
 
 @media only screen and (max-width:1100px) {
+    .navbar_logo {
+        font-size: 46px;
+        line-height: 46px;
+    }
     .font_general {
-        font-size: 16px;
+        font-size: 22px;
         line-height: 18px;
     }
+
+    .member_desc {
+        font-size: 24px;
+    }
+
+    .font_bgdefault {
+        font-size: 32px!important;
+    }
+
+    .font_bgundefault {
+        font-size: 32px!important;
+    }
+
+    .dot_data {
+        margin-top: 65px;
+        padding: 0 !important;
+    }
+
 }
 
 @media only screen and (max-width: 930px) {
     .font_bgdefault {
-        font-size: 32px!important;
+        font-size: 26px!important;
+    }
+    .navbar_logo {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .font_bgundefault {
+        font-size: 24px!important;
     }
 
-    .font_bgundefault {
-        font-size: 32px!important;
+    .font_general {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .section_title{
+        font-size: 58px;
+        line-height: 58px;
+    }
+
+    .ad-text2 {
+        font-size: 30px;
+    }
+
+    .member_desc {
+        font-size: 22px;
     }
 }
 
 @media only screen and (max-width:780px) {
+    .navbar_logo {
+        font-size: 34px;
+        line-height: 34px;
+    }
+    .navbar_right {
+        display: none;
+    }
+    .fa-align-justify {
+        display: inline-block!important;
+    }
     .font_default {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 30px;
     }
     .font_undefault {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 30px;
     }
     .font_bgdefault {
-        font-size: 30px;
+        font-size: 36px;
         line-height: 64px;
     }
     .font_bgundefault {
-        font-size: 30px;
+        font-size: 36px;
         line-height: 64px;
     }
     .font_general {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 18px;
+        line-height: 18px;
     }
     .mint_button {
         font-size: 20px;
         line-height: 28px;
     }
+    .navbar_button {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 8px 20px;
+        margin-right: 10px;
+    }
+    .section_title{
+        font-size: 52px;
+        line-height: 52px;
+    }
+
+    .member_desc {
+        font-size: 20px;
+    }
+
+    .ad-text2 {
+        font-size: 26px;
+    }
+
 }
 
 @media only screen and (max-width:576px) {
@@ -356,7 +465,7 @@ body {
         line-height: 24px;
     }
     .font_bgdefault {
-        font-size: 24px;
+        font-size: 30px;
         line-height: 56px;
     }
     .font_bgundefault {
@@ -364,8 +473,12 @@ body {
         line-height: 56px;
     }
     .font_general {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 16px;
+    }
+
+    .member_desc {
+        font-size: 18px;
     }
 }
 
@@ -376,29 +489,31 @@ body {
     /* border-top: 150px solid #fff; */
 }
 
-@media only screen and (max-width:1366px) {
-    .section_title{
-        font-size: 64px;
-        line-height: 64px;
-    }
-}
-
 @media only screen and (max-width:780px) {
     .section_title{
         font-size: 48px;
-        line-height: 64px;
+        line-height: 48px;
     }
-}
+    .top_title_num {
+        font-size: 26px;
+        line-height: 48px;
+    }
+    .top_title {
+        font-size: 36px;
+        /* line-height: 48px; */
+    }
 
-@media only screen and (max-width:576px) {
-    .section_title{
-        font-size: 32px;
-        line-height: 56px;
+    .top_data {
+        font-size: 24px;
+        line-height: 24px;
     }
-    .roadmap_title_back {
-        border-left: 50vw solid transparent;
-        border-right: 50vw solid transparent;
-        border-top: 120px solid #fff;
+    .dot {
+        padding: 0px 10px;
+    }
+    .dot_data {
+        margin-top: 55px;
+        padding-right: 15px;
+        padding: 0 !important;
     }
 }
 
@@ -429,10 +544,10 @@ body {
 }
 
 .dot {
-    background: #9c0bf0;
+    background: #fff;
     box-shadow: 0px 0px 13px rgb(255 255 255 / 53%);
     padding: 5px 15px;
-    margin-left: -25px;
+    margin-left: -5px;
     border-radius: 50%;
     border: solid 5px #000;
     z-index: 99;
@@ -444,7 +559,7 @@ body {
     width: 4px;
     background: #8BC4FF;
     /* box-shadow: 0px 0px 7px rgb(118 185 255 / 46%); */
-    left: 2.9%;
+    left: 4%;
     top: 125px;
     height: 98%;
     z-index: 0;
@@ -465,24 +580,21 @@ body {
         width: 4px;
         background: #8BC4FF;
         /* box-shadow: 0px 0px 7px rgb(118 185 255 / 46%); */
-        left: 2.9%;
+        left: 3.9%;
         top: 88px;
         height: 100%;
         z-index: 0;
     }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 768px) {
     .roadmap .top_one .row.position-relative:after {
         position: absolute;
         content: "";
         width: 3px;
         background: #8BC4FF;
-        /* box-shadow: 0px 0px 7px rgb(118 185 255 / 46%); */
-        left: 9.8%;
-        top: 71px;
-        height: 100%;
-        z-index: 0;
+        left: 8%;
+        top: 108px;
     }
 }
 
@@ -515,63 +627,40 @@ body {
     padding: 0 !important;
 }
 
-@media only screen and (max-width:1366px) {
-    .top_title {
-        font-size: 41px;
-        /* line-height: 78px; */
-    }
-    .top_title_num {
-        font-size: 40px;
-        line-height: 78px;
-    }
-    .top_data {
-        font-size: 22px;
-        line-height: 40px;
-    }
-    .dot {
-        background: #FFFFFF;
-        box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.53);
-        padding: 3px 13px;
-        border-radius: 50%;
-    }
-}
-
-@media only screen and (max-width:780px) {
-    .top_title_num {
-        font-size: 26px;
-        line-height: 48px;
-    }
-    .top_title {
-        font-size: 22px;
-        /* line-height: 48px; */
-    }
-
-    .top_data {
-        font-size: 14px;
-        line-height: 24px;
-    }
-    .dot {
-        padding: 0px 10px;
-    }
-    .dot_data {
-        margin-top: 18px;
-        padding: 0 !important;
-    }
-}
-
 @media only screen and (max-width:576px) {
+    .navbar_logo {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
     .top_title_num {
         font-size: 15px;
         line-height: 34px;
     }
 
     .top_title {
-        font-size: 12px;
+        font-size: 24px;
         /* line-height: 34px; */
     }
     .top_data {
-        font-size: 13px;
+        font-size: 20px;
         line-height: 24px;
+    }
+
+    .section_title{
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .ad-text2 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .roadmap_title_back {
+        /* border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
+        border-top: 120px solid #fff; */
     }
 }
 
@@ -686,6 +775,10 @@ body {
     .panel p {
         font-size: 2.6vw !important;
         color: white;
+    }
+
+    .ad-text-block {
+        padding-top: 0;
     }
 }
 
@@ -981,17 +1074,6 @@ h4 {
     border: 3px dashed #9c0bf0;
 }
 
-.section_title{
-    font-family: 'headlinefont';
-    margin-top: 50px;
-    padding-top: 50px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 60px;
-    color: #fff;
-}
-
 .section-divider {
     margin: 50px 0;
 }
@@ -1035,6 +1117,7 @@ h4 {
     flex-direction: row;
     justify-content: center;
     align-items: middle;
+    padding: 20px;
 }
 
 /* main  ENd */
