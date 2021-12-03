@@ -12,15 +12,16 @@ import {
 const Home = props => (
   <div>
     <section className="pb-500 main-back">
-        <nav className="navbar container-fluid p-4 wow fadeInDown">
-            <a href="">
-                <div className="navbar_logo float-left main-grey">
-                    <img className="logo-dragon" src="./assets/images/dragon_logo.png"/> Dragon
-                </div>
-            </a>
-            <div className="justify"><i className="fa fa-align-justify d-none"></i></div>
-            <div className="float-right navbar_right">
-                <button className="navbar_button btn mr-3 d-inline-block">CONNECT WALLET</button>
+        <nav className="navbar container-fluid p-4 wow fadeInDown navbar-block">
+            <div className="logo-block">
+                <a href="">
+                    <div className="navbar_logo main-grey">
+                        <img className="logo-dragon" src="./assets/images/dragon_logo.png"/> Dragon
+                    </div>
+                </a>
+            </div>
+            <div className="navbar_right">
+                <button className="navbar_button btn mr-1 d-inline-block">CONNECT</button>
             </div>
         </nav>
         <div className="ad-text-block text-center">
@@ -223,8 +224,8 @@ const Home = props => (
         </div>
         <div className="mt-5">
             <div className="row white_font_color team_block">
-                <div className="col-md-3 mt-4">
-                    <img className="w-100 wow slideInLeft" src="./assets/images/prt_dep_alessandro.png" alt=""/>
+                <div className="col-md-3 mt-4 text-center">
+                    <img className="wow slideInLeft img-thumbnail member-picture" src="./assets/images/member1.png" alt=""/>
                 </div>
                 <div className="col-md-9 mt-4 wow slideInRight pr-0">
                     <div className="rubik-font member_name">
@@ -236,8 +237,8 @@ const Home = props => (
                 </div>
             </div>
             <div className="row white_font_color team_block">
-                <div className="col-md-3 mt-4">
-                    <img className="w-100 wow slideInLeft" src="./assets/images/prt_dev_pavel2.png" alt=""/>
+                <div className="col-md-3 mt-4 text-center">
+                    <img className="wow slideInLeft img-thumbnail member-picture" src="./assets/images/member2.png" alt=""/>
                 </div>
                 <div className="col-md-9 mt-4 wow slideInRight pr-0">
                     <div className="rubik-font member_name">

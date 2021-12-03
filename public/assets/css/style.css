@@ -38,10 +38,19 @@ body {
     background-color: #171717!important;
 }
 
+a {
+    text-decoration: none!important;
+}
+
 .main-back {
     background-image: url(../images/back_dragon1.jpg);
     /* background-attachment: fixed; */
     background-size: cover;
+}
+
+.navbar_right {
+    position: absolute;
+    right: 20px;
 }
 
 /* Navbar  BEGIN */
@@ -72,6 +81,11 @@ body {
     font-family: 600;
 }
 
+.member-picture {
+    border-radius: 50%;
+    width: 100%;
+}
+
 .mint-button-block {
     margin-top: 5%;
 }
@@ -94,7 +108,7 @@ body {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 46px;
     padding: 10px 30px;
 }
@@ -288,7 +302,7 @@ body {
         line-height: 50px;
     }
     .navbar_button {
-        font-size: 14px;
+        font-size: 20px;
         line-height: 36px;
     }
     .top_title {
@@ -404,9 +418,6 @@ body {
         font-size: 34px;
         line-height: 34px;
     }
-    .navbar_right {
-        display: none;
-    }
     .fa-align-justify {
         display: inline-block!important;
     }
@@ -435,7 +446,7 @@ body {
         line-height: 28px;
     }
     .navbar_button {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 36px;
         padding: 8px 20px;
         margin-right: 10px;
@@ -504,8 +515,8 @@ body {
     }
 
     .top_data {
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 22px;
+        line-height: 22px;
     }
     .dot {
         padding: 0px 10px;
@@ -587,22 +598,11 @@ body {
     }
 }
 
-@media(max-width: 768px) {
-    .roadmap .top_one .row.position-relative:after {
-        position: absolute;
-        content: "";
-        width: 3px;
-        background: #8BC4FF;
-        left: 8%;
-        top: 108px;
-    }
-}
-
 .top_data {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 62px;
     display: flex;
     align-items: center;
@@ -643,7 +643,7 @@ body {
         /* line-height: 34px; */
     }
     .top_data {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
     }
 
@@ -779,6 +779,26 @@ body {
 
     .ad-text-block {
         padding-top: 0;
+    }
+}
+
+@media(max-width: 767px) {
+    .roadmap .top_one .row.position-relative:after {
+        position: absolute;
+        content: "";
+        width: 3px;
+        background: #8BC4FF;
+        left: 8%;
+        top: 108px;
+    }
+    .member-picture {
+        width: 50%;
+    }
+    .dot_data {
+        margin-top: 50px;
+    }
+    .member_name {
+        text-align: center;
     }
 }
 
