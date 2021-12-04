@@ -236,6 +236,7 @@ const Home = props => (
                     </div>
                 </div>
             </div>
+            
             <div className="row white_font_color team_block">
                 <div className="col-md-3 mt-4 text-center">
                     <img className="wow slideInLeft img-thumbnail member-picture" src="./assets/images/member2.png" alt=""/>
