@@ -225,7 +225,7 @@ const Home = props => (
                     <h1 className="footer-font">What is LuckyDragon?</h1>
                 </button>
                 <div className="panel">
-                    <p>LuckyDragon is about the building the community on base ground of real product which are merch, app and NFT.</p>
+                    <p>Luckydragon is a community driven NFT project made up of 10,000 AI generated NFTs with six trait layers and MISSING unique traits on the Ethereum blockchain.</p>
                 </div>
             </div>
             <div className="mt-4 accordion-container footer_round">
@@ -233,7 +233,7 @@ const Home = props => (
                     <h1 className="footer-font">How much is the mint?</h1>
                 </button>
                 <div className="panel">
-                    <p>Presale mint price will be 0.08ETH and public mint price will be 0.2ETH. </p>
+                    <p>The pre sale price for Luckydragons is going to be 0.077 Ethereum and if you miss out on the whitelist the remaining dragons will be sold for 0.25 Ethereum. </p>
                 </div>
             </div>
             <div className="mt-4 accordion-container footer_round">
@@ -241,7 +241,7 @@ const Home = props => (
                     <h1 className="footer-font">When is the launch?</h1>
                 </button>
                 <div className="panel">
-                    <p>Our official mint date is January 1st 2022 at 2:00PM EST.</p>
+                    <p>Launch date currently is TBA and will be announced in our discord.</p>
                 </div>
             </div>
             <div className="mt-4 accordion-container footer_round">
