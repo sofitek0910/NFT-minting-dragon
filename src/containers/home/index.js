@@ -108,21 +108,16 @@ const Home = props => (
                         </div>
                         <div className="col-md-11 col-10 d-inline mt-4">
                             <div className="">
-                                <span className="top_title_num roadmap_font"> </span><span className="top_title">Launch Roadmap</span>
+                                <span className="top_title_num roadmap_font"> </span><span className="top_title">SELL OUT</span>
                             </div>
                             <div className="top_data">
-                                Quality comes first. The goal is to make our first drop as cool 
-                                as possible so we can have freedom to develop the universe. 
-                                We're still working on a number of rarity criteria, as well as a lot of new Lore concepts. 
-                                The drop release date will be announced as soon as the project's quality and technical aspects are fully progressed. 
+                                All giveaway winners will be given their prizes with proof to the community
+                                Community votes to tell us what you want as a community out of us
+                                Percentage of secondary sales will be all going into floor sweeps and giveaways
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* <div className="col-md-4 d-flex align-items-center justify-content-center">
-                    <img className="w-75 pc" src="./assets/images/main/Community1.png"/>
-                    <img className="w-50 sp mt-3" src="./assets/images/main/Community1.png"/>
-                </div> */}
             </div>
             <div className="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
                 <div className="col-md-12">
@@ -132,21 +127,16 @@ const Home = props => (
                         </div>
                         <div className="col-md-11 col-10 d-inline mt-4">
                             <div className="">
-                                <span className="top_title_num roadmap_font"></span><span className="top_title">Physical Part</span>
+                                <span className="top_title_num roadmap_font"></span><span className="top_title">Q1</span>
                             </div>
                             <div className="top_data">
-                                Dragons have a huge potential as physical creations. 
-                                We are passionate about 3D printing and want to bring our concept to life with high-quality materials. 
-                                After several talks with famous art toys makers, we are currently working on some concepts but wait, 
-                                let’s keep a little mystery for the moment! We also aim to create clothing and merchandise using high-quality materials and textiles with eco-friendly fabrics. 
+                                Weekly giveaways
+                                Free mint of the luckybabydragons
+                                Community votes for new holder benefits
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* <div className="col-md-4 d-flex align-items-center justify-content-center">
-                    <img className="w-75 pc" src="./assets/images/main/Charity1.png"/>
-                    <img className="w-50 sp mt-3" src="./assets/images/main/Charity1.png"/>
-                </div> */}
             </div>
             <div className="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
                 <div className="col-md-12">
@@ -156,13 +146,12 @@ const Home = props => (
                         </div>
                         <div className="col-md-11 col-10 d-inline mt-4">
                             <div className="">
-                                <span className="top_title_num roadmap_font"> </span><span className="top_title">LUCKYDRAGON ARTISTS</span>
+                                <span className="top_title_num roadmap_font"> </span><span className="top_title">Q2</span>
                             </div>
                             <div className="top_data">
-                                We know a lot of artists in the NFT community and beyond! We'd like to develop a series 
-                                in which each dragon is made in collaboration with artists we like and under their artistic direction. 
-                                We would create a small collection of 1/1 unique dragons by artists, with all proceeds going to them! 
-                                This collection is incredibly important to us, and we are excited to see what we can accomplish together!
+                                Begin Lucky dragon mobile game development
+                                Merch drop
+                                Floor sweeps
                             </div>
                         </div>
                     </div>
@@ -176,20 +165,17 @@ const Home = props => (
                         </div>
                         <div className="col-md-11 col-10 d-inline mt-4">
                             <div className="">
-                                <span className="top_title_num roadmap_font"> </span><span className="top_title">LUCKYDRAGON TAKEOVER</span>
+                                <span className="top_title_num roadmap_font"> </span><span className="top_title">Q3</span>
                             </div>
                             <div className="top_data">
-                                A multi-city AD takeover will commence highlighting Yellow Giants of some of the most active Dragon community members. 
-                                Creatives from the Yellow Giant community will also be commissioned for this campaign, 
-                                bringing value to Yellow Giant holders, derivatives artists, and the greater Dragon community.
+                                Luckydragon mobile game drop
+                                Creating our own crypto token to where holders will be able to gain yield
+                                More community votes for holder benefits 
+                                Floor sweeps
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* <div className="col-md-4 d-flex align-items-center justify-content-center">
-                    <img className="w-75 pc" src="./assets/images/main/Diamond1.png"/>
-                    <img className="w-75 sp mt-3" src="./assets/images/main/Diamond1.png"/>
-                </div> */}
             </div>
             <div className="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
                 <div className="col-md-12">
