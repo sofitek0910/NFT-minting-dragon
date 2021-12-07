@@ -45,8 +45,8 @@ const Home = props => (
                     </div>
                     <div className="pt-md-3  wow fadeInUp">
                         <span className="font_general line-height-18">
-                            The LuckyDragon is a collection of 10,000 generative Mekas with hundreds of elements inspired by Lucky Dragon taam.<br/>
-                            Each artwork is original, with its own color palette and creation. The objective was to make each Meka unique in order to prioritize quality above quantity.
+                            The LuckyDragon is a collection of 10,000 generative dragons with hundreds of elements inspired by Lucky Dragon taam.<br/>
+                            Each artwork is original, with its own color palette and creation. The objective was to make each dragon unique in order to prioritize quality above quantity.
                         </span>
                     </div>
                 </div>
@@ -135,7 +135,7 @@ const Home = props => (
                                 <span className="top_title_num roadmap_font"></span><span className="top_title">Physical Part</span>
                             </div>
                             <div className="top_data">
-                                Mekas have a huge potential as physical creations. 
+                                Dragons have a huge potential as physical creations. 
                                 We are passionate about 3D printing and want to bring our concept to life with high-quality materials. 
                                 After several talks with famous art toys makers, we are currently working on some concepts but wait, 
                                 let’s keep a little mystery for the moment! We also aim to create clothing and merchandise using high-quality materials and textiles with eco-friendly fabrics. 
@@ -179,9 +179,9 @@ const Home = props => (
                                 <span className="top_title_num roadmap_font"> </span><span className="top_title">LUCKYDRAGON TAKEOVER</span>
                             </div>
                             <div className="top_data">
-                                A multi-city AD takeover will commence highlighting Yellow Giants of some of the most active YGS community members. 
+                                A multi-city AD takeover will commence highlighting Yellow Giants of some of the most active Dragon community members. 
                                 Creatives from the Yellow Giant community will also be commissioned for this campaign, 
-                                bringing value to Yellow Giant holders, derivatives artists, and the greater YGS community.
+                                bringing value to Yellow Giant holders, derivatives artists, and the greater Dragon community.
                             </div>
                         </div>
                     </div>
@@ -236,7 +236,7 @@ const Home = props => (
                     </div>
                 </div>
             </div>
-            
+
             <div className="row white_font_color team_block">
                 <div className="col-md-3 mt-4 text-center">
                     <img className="wow slideInLeft img-thumbnail member-picture" src="./assets/images/member2.png" alt=""/>
