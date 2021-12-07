@@ -177,30 +177,6 @@ const Home = props => (
                     </div>
                 </div>
             </div>
-            <div className="row pb-5 mx-0 position-relative mx-0 wow fadeInDown">
-                <div className="col-md-12">
-                    <div className="row rounded roadmap_round py-4">
-                        <div className="col-md-1 col-2 d-inline dot_data p-0">
-                            <span className="dot"></span>
-                        </div>
-                        <div className="col-md-11 col-10 d-inline mt-4">
-                            <div className="">
-                                <span className="top_title_num roadmap_font"></span><span className="top_title">Future of Dragons</span>
-                            </div>
-                            <div className="top_data">
-                                When all of these stages are completed, we’ll take care of maintaining the Meka Universe. 
-                                We both come from the design industry, and we are truly passionate about Art, Short films, 
-                                Physical and Digital Exploration, and we would like to explore even more, with the desire to 
-                                always make events more impressive and ambitious.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* <div className="col-md-4 d-flex align-items-center justify-content-center">
-                    <img src="./assets/images/main/Future1.png" className="w-75 pc"/>
-                    <img src="./assets/images/main/Future1.png" className="w-50 sp mt-3"/>
-                </div> */}
-            </div>
         </div>
     </section>
 
