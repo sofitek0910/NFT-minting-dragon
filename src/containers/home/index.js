@@ -26,7 +26,7 @@ const Home = props => (
         </nav>
         <div className="ad-text-block text-center">
             <div className="ad-text1 section_title">10,000 Unique Dragons</div>
-            <div className="ad-text2">The Launch Date are Coming Soon!</div>
+            <div className="ad-text2">The Launch Date is Coming Soon!</div>
         </div>
         <div className="col-12 text-center wow zoomInUp mint-button-block">
             <button className="mint_button btn mt-5">MINTING</button>
@@ -111,9 +111,9 @@ const Home = props => (
                                 <span className="top_title_num roadmap_font"> </span><span className="top_title">SELL OUT</span>
                             </div>
                             <div className="top_data">
-                                All giveaway winners will be given their prizes with proof to the community
-                                Community votes to tell us what you want as a community out of us
-                                Percentage of secondary sales will be all going into floor sweeps and giveaways
+                                All giveaway winners will be given their prizes with proof to the community <b/>
+                                Community votes to tell us what you want as a community out of us <b/>
+                                Percentage of secondary sales will be all going into floor sweeps and giveaways <b/>
                             </div>
                         </div>
                     </div>
@@ -130,9 +130,9 @@ const Home = props => (
                                 <span className="top_title_num roadmap_font"></span><span className="top_title">Q1</span>
                             </div>
                             <div className="top_data">
-                                Weekly giveaways
-                                Free mint of the luckybabydragons
-                                Community votes for new holder benefits
+                                Weekly giveaways <b/>
+                                Free mint of the luckybabydragons <b/>
+                                Community votes for new holder benefits <b/>
                             </div>
                         </div>
                     </div>
@@ -149,9 +149,9 @@ const Home = props => (
                                 <span className="top_title_num roadmap_font"> </span><span className="top_title">Q2</span>
                             </div>
                             <div className="top_data">
-                                Begin Lucky dragon mobile game development
-                                Merch drop
-                                Floor sweeps
+                                Begin Lucky dragon mobile game development <b/>
+                                Merch drop <b/>
+                                Floor sweeps <b/>
                             </div>
                         </div>
                     </div>
@@ -168,9 +168,9 @@ const Home = props => (
                                 <span className="top_title_num roadmap_font"> </span><span className="top_title">Q3</span>
                             </div>
                             <div className="top_data">
-                                Luckydragon mobile game drop
-                                Creating our own crypto token to where holders will be able to gain yield
-                                More community votes for holder benefits 
+                                Luckydragon mobile game drop <b/>
+                                Creating our own crypto token to where holders will be able to gain yield<b/>
+                                More community votes for holder benefits <b/>
                                 Floor sweeps
                             </div>
                         </div>
@@ -225,7 +225,7 @@ const Home = props => (
                     <h1 className="footer-font">What is LuckyDragon?</h1>
                 </button>
                 <div className="panel">
-                    <p>Luckydragon is a community driven NFT project made up of 10,000 AI generated NFTs with six trait layers and 100 unique traits on the Ethereum blockchain.</p>
+                    <p>Luckydragon is a community driven NFT project made up of 10,000 AI generated NFTs with seven trait layers and 100 unique traits on the Ethereum blockchain.</p>
                 </div>
             </div>
             <div className="mt-4 accordion-container footer_round">
@@ -233,7 +233,7 @@ const Home = props => (
                     <h1 className="footer-font">How much is the mint?</h1>
                 </button>
                 <div className="panel">
-                    <p>The pre sale price for Luckydragons is going to be 0.077 Ethereum and if you miss out on the whitelist the remaining dragons will be sold for 0.25 Ethereum. </p>
+                    <p>The pre sale price for Luckydragons is going to be 0.08 Ethereum and if you miss out on the whitelist the remaining dragons will be sold for 0.25 Ethereum. </p>
                 </div>
             </div>
             <div className="mt-4 accordion-container footer_round">
@@ -249,7 +249,7 @@ const Home = props => (
                     <h1 className="footer-font">Is there a whitelist?</h1>
                 </button>
                 <div className="panel">
-                    <p>Yes, we are going to make whitelist.</p>
+                    <p>Yes, we are going to make whitelist. You can find more information about our white list in our discord.</p>
                 </div>
             </div>
             <div className="mt-4 accordion-container footer_round">
@@ -257,7 +257,7 @@ const Home = props => (
                     <h1 className="footer-font">Can you add more FAQ from community?</h1>
                 </button>
                 <div className="panel">
-                    <p>Sure, in case of any unanswered question please contact sunshine09101@gmail.com.</p>
+                    <p>Sure, in case of any unanswered question please contact sunshine09101@gmail.com. You can also alway dm Luckyjay on discord.</p>
                 </div>
             </div>
             <h4 class="font-calibri text-white mt-2 text-center mt-5">© All Rights Reserved 2021</h4>
