@@ -225,7 +225,7 @@ const Home = props => (
                     <h1 className="footer-font">What is LuckyDragon?</h1>
                 </button>
                 <div className="panel">
-                    <p>Luckydragon is a community driven NFT project made up of 10,000 AI generated NFTs with six trait layers and MISSING unique traits on the Ethereum blockchain.</p>
+                    <p>Luckydragon is a community driven NFT project made up of 10,000 AI generated NFTs with six trait layers and 100 unique traits on the Ethereum blockchain.</p>
                 </div>
             </div>
             <div className="mt-4 accordion-container footer_round">
