@@ -25,7 +25,7 @@ const Home = props => (
             </div>
         </nav>
         <div className="ad-text-block text-center">
-            <div className="ad-text1 section_title">10,000 Unique Dragons</div>
+            <div className="ad-text1 section_title">10,000 Unique LuckyDragons</div>
             <div className="ad-text2">The Launch Date is Coming Soon!</div>
         </div>
         <div className="col-12 text-center wow zoomInUp mint-button-block">
