@@ -45,7 +45,7 @@ const Home = props => (
                     </div>
                     <div className="pt-md-3  wow fadeInUp">
                         <span className="font_general line-height-18">
-                            The LuckyDragon is a collection of 10,000 generative dragons with hundreds of elements inspired by Lucky Dragon taam.<br/>
+                            The LuckyDragon is a collection of 10,000 generative dragons with hundreds of elements inspired by Lucky Dragon team.<br/>
                             Each artwork is original, with its own color palette and creation. The objective was to make each dragon unique in order to prioritize quality above quantity.
                         </span>
                     </div>
