@@ -16,7 +16,7 @@ const Home = props => (
             <div className="logo-block">
                 <a href="">
                     <div className="navbar_logo main-grey">
-                        <img className="logo-dragon" src="./assets/images/dragon_logo.png"/> Dragon
+                        <img className="logo-dragon" src="./assets/images/dragon_logo.png"/> LuckyDragon
                     </div>
                 </a>
             </div>
@@ -25,7 +25,7 @@ const Home = props => (
             </div>
         </nav>
         <div className="ad-text-block text-center">
-            <div className="ad-text1 section_title">10,000 Unique LuckyDragons</div>
+            <div className="ad-text1 section_title">10,000 Unique Dragons</div>
             <div className="ad-text2">The Launch Date is Coming Soon!</div>
         </div>
         <div className="col-12 text-center wow zoomInUp mint-button-block">
@@ -45,7 +45,7 @@ const Home = props => (
                     </div>
                     <div className="pt-md-3  wow fadeInUp">
                         <span className="font_general line-height-18">
-                            The LuckyDragon is a collection of 10,000 generative dragons with hundreds of elements inspired by Lucky Dragon team.<br/>
+                            The LuckyDragon is a collection of 10,000 generative dragons with 100 of trait elements inspired by LuckyDragon team.<br/>
                             Each artwork is original, with its own color palette and creation. The objective was to make each dragon unique in order to prioritize quality above quantity.
                         </span>
                     </div>
@@ -61,7 +61,7 @@ const Home = props => (
 
     <section className="slide-container">
         <div className="col-12 text-center d-flex justify-content-center">
-            <span className="section_title line-height-15">LUCKY DRAGON</span>
+            <span className="section_title line-height-15">LUCKYDRAGON</span>
         </div>
         <div className="swiper mySwiper">
             <div className="swiper-wrapper">
