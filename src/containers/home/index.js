@@ -111,9 +111,9 @@ const Home = props => (
                                 <span className="top_title_num roadmap_font"> </span><span className="top_title">SELL OUT</span>
                             </div>
                             <div className="top_data">
-                                All giveaway winners will be given their prizes with proof to the community <b/>
-                                Community votes to tell us what you want as a community out of us <b/>
-                                Percentage of secondary sales will be all going into floor sweeps and giveaways <b/>
+                                All giveaway winners will be given their prizes with proof to the community. <br/>
+                                Community votes to tell us what you want as a community out of us. <br/>
+                                Percentage of secondary sales will be all going into floor sweeps and giveaways. <br/>
                             </div>
                         </div>
                     </div>
@@ -130,9 +130,9 @@ const Home = props => (
                                 <span className="top_title_num roadmap_font"></span><span className="top_title">Q1</span>
                             </div>
                             <div className="top_data">
-                                Weekly giveaways <b/>
-                                Free mint of the luckybabydragons <b/>
-                                Community votes for new holder benefits <b/>
+                                Weekly giveaways. <br/>
+                                Free mint of the luckybabydragons. <br/>
+                                Community votes for new holder benefits. <br/>
                             </div>
                         </div>
                     </div>
@@ -149,9 +149,9 @@ const Home = props => (
                                 <span className="top_title_num roadmap_font"> </span><span className="top_title">Q2</span>
                             </div>
                             <div className="top_data">
-                                Begin Lucky dragon mobile game development <b/>
-                                Merch drop <b/>
-                                Floor sweeps <b/>
+                                Begin Lucky dragon mobile game development. <br/>
+                                Merch drop. <br/>
+                                Floor sweeps. <br/>
                             </div>
                         </div>
                     </div>
@@ -168,10 +168,10 @@ const Home = props => (
                                 <span className="top_title_num roadmap_font"> </span><span className="top_title">Q3</span>
                             </div>
                             <div className="top_data">
-                                Luckydragon mobile game drop <b/>
-                                Creating our own crypto token to where holders will be able to gain yield<b/>
-                                More community votes for holder benefits <b/>
-                                Floor sweeps
+                                Luckydragon mobile game drop. <br/>
+                                Creating our own crypto token to where holders will be able to gain yield<br/>
+                                More community votes for holder benefits. <br/>
+                                Floor sweeps.
                             </div>
                         </div>
                     </div>
