@@ -111,17 +111,14 @@ a {
     font-size: 24px;
     line-height: 46px;
     padding: 10px 30px;
-}
-
-/* button animation */
-
-.navbar_button {
     display: inline-block;
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
     z-index: 1;
 }
+
+/* button animation */
 
 .navbar_button:after {
     content: "";
@@ -1137,6 +1134,22 @@ h4 {
     justify-content: center;
     align-items: middle;
     padding: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar_right {
+        position: absolute;
+        left: 38%;
+        top: 100px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar_right {
+        position: absolute;
+        left: 34%;
+        top: 100px;
+    }
 }
 
 /* main  ENd */
