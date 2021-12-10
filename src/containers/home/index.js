@@ -218,7 +218,7 @@ const Home = props => (
 
             <div className="row white_font_color team_block">
                 <div className="col-md-3 mt-4 text-center">
-                    <img className="wow slideInLeft img-thumbnail member-picture" src="./assets/images/member1.png" alt=""/>
+                    <img className="wow slideInLeft img-thumbnail member-picture" src="./assets/images/member3.png" alt=""/>
                 </div>
                 <div className="col-md-9 mt-4 wow slideInRight pr-0">
                     <div className="rubik-font member_name">
@@ -234,7 +234,7 @@ const Home = props => (
 
             <div className="row white_font_color team_block">
                 <div className="col-md-3 mt-4 text-center">
-                    <img className="wow slideInLeft img-thumbnail member-picture" src="./assets/images/member2.png" alt=""/>
+                    <img className="wow slideInLeft img-thumbnail member-picture" src="./assets/images/member4.png" alt=""/>
                 </div>
                 <div className="col-md-9 mt-4 wow slideInRight pr-0">
                     <div className="rubik-font member_name">
