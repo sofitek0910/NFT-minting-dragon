@@ -191,10 +191,11 @@ const Home = props => (
                 </div>
                 <div className="col-md-9 mt-4 wow slideInRight pr-0">
                     <div className="rubik-font member_name">
-                        CEO David
+                        LuckyJay
                     </div>
                     <div className="rubik-font member_desc">
-                        The visionary and also the mediator of the LuckyDragon. A cryptocurrencies enthusiast since 2015. He entered the IT world as a designer and a visionary of lottery and gambling games.
+                        This project was created by me to create a utility based NFT project in hopes to create a community that is unmatched. 
+                        As the founder of this project I can guarantee I will be putting all of my time and energy into making this the biggest project possible by listening to you guys our community.
                     </div>
                 </div>
             </div>
@@ -205,10 +206,43 @@ const Home = props => (
                 </div>
                 <div className="col-md-9 mt-4 wow slideInRight pr-0">
                     <div className="rubik-font member_name">
-                        Robert
+                        FunnyDragon  
                     </div>
                     <div className="rubik-font member_desc">
-                        One the first persons involved in full development of LuckyDragon. His focus is mostly on lottery and card games, but dont be scared, he is not a gambler, but only developer.
+                        A proficient full stack developer interested in contributing expertise in web and blockchain development.
+                        Capable of excelling as part of a team or individually in a fast-paced environment. 
+                        Deeply knowledgeable in distributed ledger, smart contract, blockchain architecture patterns, and different blockchain standards and ecosystems.
+                    </div>
+                </div>
+            </div>
+
+            <div className="row white_font_color team_block">
+                <div className="col-md-3 mt-4 text-center">
+                    <img className="wow slideInLeft img-thumbnail member-picture" src="./assets/images/member1.png" alt=""/>
+                </div>
+                <div className="col-md-9 mt-4 wow slideInRight pr-0">
+                    <div className="rubik-font member_name">
+                        JoyDragon
+                    </div>
+                    <div className="rubik-font member_desc">
+                        Chandler is an amazing NFT artist and graphic designer  who is crazy in love of NFT art.
+                        He always think to get an idea for unique NFT art.
+                        He is going to build his exciting portfolio as an expert of NFT art. 
+                    </div>
+                </div>
+            </div>
+
+            <div className="row white_font_color team_block">
+                <div className="col-md-3 mt-4 text-center">
+                    <img className="wow slideInLeft img-thumbnail member-picture" src="./assets/images/member2.png" alt=""/>
+                </div>
+                <div className="col-md-9 mt-4 wow slideInRight pr-0">
+                    <div className="rubik-font member_name">
+                        FancyDragon    
+                    </div>
+                    <div className="rubik-font member_desc">
+                        Expressive and gorgeous Web and Mobile designer.
+                        Focused on creating and delivering high-quality designs that balance strategy and creativity, designs that are effective and easy to use.
                     </div>
                 </div>
             </div>

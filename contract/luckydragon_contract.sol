@@ -4,22 +4,22 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract SSSHHHTTT is ERC721Enumerable, Ownable {
+contract LuckyDragonNFT is ERC721Enumerable, Ownable {
 
     using Strings for uint256;
 
     string public baseTokenURI;
     string public baseExtension = ".json";
 
-    uint256 public maxSupply = 7777;
-    uint256 public publicsale1Supply = 2000;
-    uint256 public presaleStartDate = 1638306000;       // 11 Nov 2021 GMT
-    uint256 public publicStartDate = 1638478800;        // 14 Nov 2021 GMT
-    uint256 public presaleSupply = 0;
+    uint256 public maxSupply = 10000;
+    uint256 public preSaleSupply = 2000;
+    uint256 public publicSaleSupply = 8000;
 
-    uint256 public prePrice = 0.02 ether;
-    uint256 public pubicPrice1 = 0.03 ether;
-    uint256 public pubicPrice2 = 0.04 ether;
+    bool public isPreSaleActive = false;
+    bool public isPublicSaleActive = false;
+
+    uint256 public prePrice = 0.08 ether;
+    uint256 public pubicPrice = 0.2 ether;
 
     mapping(address => bool) public whitelist;
 
@@ -36,22 +36,26 @@ contract SSSHHHTTT is ERC721Enumerable, Ownable {
     }
 
     
-    constructor() ERC721("SSS HHH TTT", "SHT") {
+    constructor() ERC721("Dragon NFT", "SHT") {
         //setBaseURI(baseURI);
     }
 
     function price() public view returns (uint256) {
-        uint256 d_now = block.timestamp;
-        uint256 supply = totalSupply();
-        if (d_now < presaleStartDate) {
+        if (isPreSaleActive) {
             return prePrice;
-        } else if (presaleStartDate <= d_now && d_now < publicStartDate) {
-            return prePrice;
-        } else if (publicStartDate <= d_now && (supply-presaleSupply) <= publicsale1Supply ) {
-            return pubicPrice1;
         } else {
-            return pubicPrice2;
+            return pubicPrice;
         }
+    }
+
+    function flipPreSale() public onlyOwner {
+        isPublicSaleActive = false;
+        isPreSaleActive = !isPreSaleActive;
+    }
+
+    function flipPublicSale() public onlyOwner {
+        isPreSaleActive = false;
+        isPublicSaleActive = !isPublicSaleActive;
     }
 
     /** Add multiple addresses to whitelist */
@@ -86,24 +90,22 @@ contract SSSHHHTTT is ERC721Enumerable, Ownable {
         uint256 supply = totalSupply();
 
         require(!paused,                                'Contract is paused.');
-        require(presaleStartDate < block.timestamp,     'Presale Minting is not started.');
-        require(block.timestamp < publicStartDate,      'Presale Minting is ended.');
+        require(isPreSaleActive,                        'Pre sale is not active');
         require(supply < maxSupply,                     'This transaction would exceed max supply of queen');
         require(msg.value >= prePrice,                  'Ether value is too low');
 
         if (totalSupply() < maxSupply) {
-            presaleSupply += 1;
+            preSaleSupply += 1;
             _safeMint(msg.sender, supply + 1);
         }
 
         require(payable(owner()).send(msg.value));
     }
 
-    function mint() public payable {
+    function publicSaleMint() public payable {
         uint256 supply = totalSupply();
 
         require(!paused,                                'Contract is paused.');
-        require(publicStartDate < block.timestamp,      'Public Minting is not started.');
         require(supply < maxSupply,                     'This transaction would exceed max supply of queen');
         require(msg.value >= price(),                   'Ether value is too low');
 
@@ -139,27 +141,13 @@ contract SSSHHHTTT is ERC721Enumerable, Ownable {
     }
 
     function setPrice(uint256 _max_price, uint256 _min_price) public onlyOwner {
-        pubicPrice2 = _max_price;
+        pubicPrice = _max_price;
         prePrice = _min_price;
-        uint256 d_now = block.timestamp;
-        uint256 supply = totalSupply();
-        if (publicStartDate <= d_now && (supply-presaleSupply) <= publicsale1Supply ) {
-            pubicPrice1 = _max_price;
-            prePrice = _min_price;
-        } else {
-            pubicPrice2 = _max_price;
-            prePrice = _min_price;
-        }
     }
 
-    function setMintDate(uint256 _presale_startdate, uint256 _public_startdate) public onlyOwner {
-        presaleStartDate = _presale_startdate;
-        publicStartDate = _public_startdate;
-    }
-
-    function setSupply(uint256 _max_supply, uint256 _publicsale1Supply) public onlyOwner {
+    function setSupply(uint256 _max_supply, uint256 _publicsaleSupply) public onlyOwner {
         maxSupply = _max_supply;
-        publicsale1Supply = _publicsale1Supply;
+        publicSaleSupply = _publicsaleSupply;
     }
     
     function setBaseExtension(string memory _base_extension) public onlyOwner {
@@ -180,7 +168,7 @@ contract SSSHHHTTT is ERC721Enumerable, Ownable {
     }
     
     
-    function info() public view returns (uint256, uint256, uint256, uint256, uint256) {
-        return (price(), presaleStartDate, publicStartDate, totalSupply(), maxSupply);
-    }
+    // function info() public view returns (uint256, uint256, uint256, uint256, uint256) {
+    //     return (price(), preSaleStartDate, publicStartDate, totalSupply(), maxSupply);
+    // }
 }
