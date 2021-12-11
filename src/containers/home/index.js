@@ -306,7 +306,7 @@ const Home = props => (
                     <h1 className="footer-font">Can you add more FAQ from community?</h1>
                 </button>
                 <div className="panel">
-                    <p>Sure, in case of any unanswered question please contact sunshine09101@gmail.com. You can also alway dm Luckyjay on discord.</p>
+                    <p>Sure, in case of any unanswered question you can alway dm Luckyjay on discord.</p>
                 </div>
             </div>
             <h4 class="font-calibri text-white mt-2 text-center mt-5">© All Rights Reserved 2021</h4>

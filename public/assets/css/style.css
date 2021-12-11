@@ -259,6 +259,7 @@ a {
 
 .footer-font {
     font-weight: 400 !important;
+    font-size: 34px;
 }
 
 .footer_round {
@@ -290,6 +291,17 @@ a {
     align-items: center;
 }
 
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.panel p {
+    color: white;
+    font-size: 24px !important;
+}
 
 /* button animation */
 
@@ -522,6 +534,9 @@ a {
         margin-top: 55px;
         padding-right: 15px;
         padding: 0 !important;
+    }
+    .footer-font {
+        font-size: 30px;
     }
 }
 
@@ -769,7 +784,7 @@ a {
         line-height: 50px;
     }
     .panel p {
-        font-size: 2.6vw !important;
+        font-size: 22px !important;
         color: white;
     }
 
@@ -912,13 +927,6 @@ img {
     transform: rotate(180deg);
 }
 
-.panel {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-}
-
 .container-fluid {
     padding: 0 30px;
 }
@@ -933,11 +941,6 @@ button:focus {
 
 .accordion h2 {
     font-size: 2vw;
-    color: white;
-}
-
-.panel p {
-    font-size: 1.6vw;
     color: white;
 }
 
@@ -1061,7 +1064,7 @@ h4 {
         margin-left: 5px;
     }
     .panel p {
-        font-size: 3vw;
+        font-size: 20px;
         color: white;
     }
     .social_footer_image {
