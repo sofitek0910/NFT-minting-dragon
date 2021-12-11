@@ -234,6 +234,21 @@ const Home = props => (
 
             <div className="row white_font_color team_block">
                 <div className="col-md-3 mt-4 text-center">
+                    <img className="wow slideInLeft img-thumbnail member-picture" src="./assets/images/member5.png" alt=""/>
+                </div>
+                <div className="col-md-9 mt-4 wow slideInRight pr-0">
+                    <div className="rubik-font member_name">
+                        Scarlet
+                    </div>
+                    <div className="rubik-font member_desc">
+                        Discord Server creator with all standards, tools and bots needed for your server. 
+                        Apart from that advisor for community growth on discord as well as on other platforms as well
+                    </div>
+                </div>
+            </div>
+
+            <div className="row white_font_color team_block">
+                <div className="col-md-3 mt-4 text-center">
                     <img className="wow slideInLeft img-thumbnail member-picture" src="./assets/images/member4.png" alt=""/>
                 </div>
                 <div className="col-md-9 mt-4 wow slideInRight pr-0">
