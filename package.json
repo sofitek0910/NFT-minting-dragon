@@ -1,35 +1,41 @@
 {
+  "name": "hashlips_nft_minting_dapp",
+  "version": "1.0.0",
+  "description": "HashLips minting dapp is a quick and easy way to connect your smart contract and start minting NFTs.",
   "private": true,
-  "homepage": "https://create-react-app-redux.now.sh",
-  "scripts": {
-    "deploy": "now && now alias",
-    "start": "react-scripts start",
-    "now-start": "serve -s ./build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "precommit": "pretty-quick --staged"
-  },
-  "devDependencies": {
-    "prettier": "2.4.1",
-    "react-scripts": "2.1.8"
-  },
   "dependencies": {
-    "connected-react-router": "4.5.0",
-    "react": "16.14.0",
-    "react-dom": "16.14.0",
-    "react-redux": "5.1.2",
-    "react-router": "4.4.0-beta.8",
-    "react-router-dom": "4.4.0-beta.8",
-    "redux": "4.1.2",
-    "redux-thunk": "2.4.0",
-    "sanitize.css": "11.0.1",
-    "serve": "10.1.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-notifications": "^1.7.3",
+    "react-notifications-component": "^3.1.0",
+    "react-redux": "^7.2.4",
+    "react-scripts": "4.0.3",
+    "react-toastify": "^8.1.0",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.3.0",
+    "swal": "^0.1.0",
+    "sweetalert": "^2.1.2",
+    "web-vitals": "^1.0.1",
+    "web3": "^1.5.1",
+    "web3-eth-contract": "^1.5.2"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "author": "Daniel Eugene Botha (HashLips)",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

@@ -303,6 +303,21 @@ a {
     font-size: 24px !important;
 }
 
+.connected-wallet {
+    background-color: #9c0bf0;
+    color: #fff;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 46px;
+    padding: 10px 25px;
+    border: solid black 1px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+}
+
 /* button animation */
 
 @media only screen and (max-width:1366px) {
