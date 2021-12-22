@@ -267,7 +267,7 @@ function App() {
                                 Weekly giveaways. <br/>
                                 Begin Mobile game development. <br/>
                                 Community votes for new holder benefits. <br/>
-                                Free mint of the luckybabydragons. <br/>
+                                Community game nights. <br/>
                                 Floor sweeps. <br/>
                             </div>
                         </div>
