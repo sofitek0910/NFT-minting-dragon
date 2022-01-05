@@ -1,16 +1,114 @@
-import React from 'react'
-import { push } from 'connected-react-router'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
-import {
-  increment,
-  incrementAsync,
-  decrement,
-  decrementAsync
-} from '../../modules/counter'
+import React, { useEffect, useState, useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { connect } from "./redux/blockchain/blockchainActions";
+import { fetchData } from "./redux/data/dataActions";
+import * as s from "./styles/globalStyles";
+import styled from "styled-components";
 
-const Home = props => (
-  <div>
+function App() {
+  const dispatch = useDispatch();
+  const blockchain = useSelector((state) => state.blockchain);
+  const data = useSelector((state) => state.data);
+  const [walletAddress, setWallet] = useState("");
+  const [claimingNft, setClaimingNft] = useState(false);
+  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  const [mintAmount, setMintAmount] = useState(1);
+  const [CONFIG, SET_CONFIG] = useState({
+    CONTRACT_ADDRESS: "",
+    SCAN_LINK: "",
+    NETWORK: {
+      NAME: "",
+      SYMBOL: "",
+      ID: 0,
+    },
+    NFT_NAME: "",
+    SYMBOL: "",
+    MAX_SUPPLY: 1,
+    FINNEY_COST: 0,
+    DISPLAY_COST: 0,
+    GAS_LIMIT: 0,
+    MARKETPLACE: "",
+    MARKETPLACE_LINK: "",
+    SHOW_BACKGROUND: false,
+  });
+
+  const claimNFTs = () => {
+    let cost = CONFIG.WEI_COST;
+    let gasLimit = CONFIG.GAS_LIMIT;
+    let totalCostWei = String(cost * mintAmount);
+    let totalGasLimit = String(gasLimit * mintAmount);
+    console.log("Cost: ", totalCostWei);
+    console.log("Gas limit: ", totalGasLimit);
+    console.log("smartcontract--->", blockchain.smartContract)
+    setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
+    setClaimingNft(true);
+    blockchain.smartContract.methods
+      .publicSaleMint()
+      .send({
+        gasLimit: String(totalGasLimit),
+        to: CONFIG.CONTRACT_ADDRESS,
+        from: blockchain.account,
+        value: totalCostWei,
+      })
+      .once("error", (err) => {
+        console.log(err);
+        setFeedback("Sorry, something went wrong please try again later.");
+        setClaimingNft(false);
+      })
+      .then((receipt) => {
+        console.log(receipt);
+        setFeedback(
+          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+        );
+        setClaimingNft(false);
+        dispatch(fetchData(blockchain.account));
+      });
+  };
+
+  const decrementMintAmount = () => {
+    let newMintAmount = mintAmount - 1;
+    if (newMintAmount < 1) {
+      newMintAmount = 1;
+    }
+    setMintAmount(newMintAmount);
+  };
+
+  const incrementMintAmount = () => {
+    let newMintAmount = mintAmount + 1;
+    if (newMintAmount > 20) {
+      newMintAmount = 20;
+    }
+    setMintAmount(newMintAmount);
+  };
+
+  const getData = () => {
+    if (blockchain.account !== "" && blockchain.smartContract !== null) {
+      dispatch(fetchData(blockchain.account));
+    }
+    console.log("account===>", blockchain.account)
+  };
+
+  const getConfig = async () => {
+    const configResponse = await fetch("/config/config.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const config = await configResponse.json();
+    SET_CONFIG(config);
+  };
+
+  useEffect(() => {
+    getConfig();
+  }, []);
+
+  useEffect(() => {
+    getData();
+  }, [blockchain.account]);
+
+  return (
+    <div>
     <section className="pb-500 main-back">
         <nav className="navbar container-fluid p-4 wow fadeInDown navbar-block">
             <div className="logo-block">
@@ -21,7 +119,24 @@ const Home = props => (
                 </a>
             </div>
             <div className="navbar_right">
-                <button className="navbar_button btn mr-1 d-inline-block">CONNECT</button>
+                {blockchain.account == null && blockchain.account == undefined ? 
+                  <button className="navbar_button btn mr-1 d-inline-block"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        dispatch(connect());
+                        getData();
+                      }
+                    }
+                  >
+                    CONNECT
+                  </button>:
+                  <span className="connected-wallet">
+                    {String(blockchain.account).substring(0, 4) +
+                      "..." +
+                      String(blockchain.account).substring(38)
+                    }
+                  </span>
+                }
             </div>
         </nav>
         <div className="ad-text-block text-center">
@@ -29,7 +144,17 @@ const Home = props => (
             <div className="ad-text2">The Launch Date is Coming Soon!</div>
         </div>
         <div className="col-12 text-center wow zoomInUp mint-button-block">
-            <button className="mint_button btn mt-5">MINTING</button>
+            <button 
+              className="mint_button btn mt-5"
+              disabled={claimingNft ? 1 : 0}
+              onClick={(e) => {
+                e.preventDefault();
+                claimNFTs();
+                getData();
+              }}
+            >
+              {claimingNft ? "MINTING..." : "MINT"}
+            </button>
         </div>
     </section>
 
@@ -309,7 +434,7 @@ const Home = props => (
                     <p>Sure, in case of any unanswered question you can alway dm Luckyjay on discord.</p>
                 </div>
             </div>
-            <h4 class="font-calibri text-white mt-2 text-center mt-5">© All Rights Reserved 2021</h4>
+            <h4 className="font-calibri text-white mt-2 text-center mt-5">© All Rights Reserved 2021</h4>
             <div className="d-flex align-items-center justify-content-center mt-5">
                 <a href="">
                     <img className="social_footer_image" src="./assets/images/twitter_white_icon.png" alt=""/>
@@ -321,27 +446,7 @@ const Home = props => (
         </div>
     </section>
   </div>
-)
+  );
+}
 
-const mapStateToProps = ({ counter }) => ({
-  count: counter.count,
-  isIncrementing: counter.isIncrementing,
-  isDecrementing: counter.isDecrementing
-})
-
-const mapDispatchToProps = dispatch =>
-  bindActionCreators(
-    {
-      increment,
-      incrementAsync,
-      decrement,
-      decrementAsync,
-      changePage: () => push('/about-us')
-    },
-    dispatch
-  )
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Home)
+export default App;
