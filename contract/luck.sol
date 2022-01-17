@@ -1227,7 +1227,7 @@ contract LuckyDragonNFT is ERC721Enumerable, Ownable {
     string public baseExtension = ".json";
 
     uint256 public maxSupply = 10000;
-    uint256 public airdropSupply = 2000;
+    uint256 public airdropSupply = 1000;
     uint256 public preSaleSupply = 2000;
     uint256 public publicSaleSupply = 7000;
 
@@ -1269,6 +1269,10 @@ contract LuckyDragonNFT is ERC721Enumerable, Ownable {
         } else {
             return pubicPrice;
         }
+    }
+
+    function flipAirdrop() public onlyOwner {
+        isAirdropActive = !isAirdropActive;
     }
 
     function flipPreSale() public onlyOwner {
@@ -1338,7 +1342,7 @@ contract LuckyDragonNFT is ERC721Enumerable, Ownable {
     }
 
 
-    function airDrop() public payable onlyAirdropWhitelisted {
+    function airDrop(address[] calldata m) public onlyOwner {
         uint256 supply = totalSupply();
 
         require(!paused,                                'Contract is paused.');
@@ -1350,7 +1354,6 @@ contract LuckyDragonNFT is ERC721Enumerable, Ownable {
             _safeMint(msg.sender, supply + 1);
         }
 
-        require(payable(owner()).send(msg.value));
     }
 
     function preSaleMint() public payable onlyWhitelisted {
