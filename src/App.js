@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
-import * as s from "./styles/globalStyles";
+import swal  from 'sweetalert';
 import styled from "styled-components";
 
 function App() {
@@ -32,6 +32,11 @@ function App() {
     SHOW_BACKGROUND: false,
   });
 
+  const showToast = (type) => {
+        console.log("dadfasasdfa")
+        swal('Info message',"", "success");
+  };
+
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
@@ -40,7 +45,8 @@ function App() {
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     console.log("smartcontract--->", blockchain.smartContract)
-    setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
+    // setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
+    swal(`Minting your ${CONFIG.NFT_NAME}...`, "", "info");
     setClaimingNft(true);
     blockchain.smartContract.methods
       .publicSaleMint()
@@ -52,14 +58,16 @@ function App() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Sorry, something went wrong please try again later.");
+        swal('Sorry, something went wrong please try again later.',"", "error");
+        // setFeedback("Sorry, something went wrong please try again later.");
         setClaimingNft(false);
       })
       .then((receipt) => {
         console.log(receipt);
-        setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
-        );
+        swal(`WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`,"", "success");
+        // setFeedback(
+        //   `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+        // );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
       });
@@ -139,6 +147,7 @@ function App() {
                 }
             </div>
         </nav>
+        {/* <button onClick={showToast}>show toast!!!!!!!!!!!</button> */}
         <div className="ad-text-block text-center">
             <div className="ad-text1 section_title">10,000 Unique Dragons</div>
             <div className="ad-text2">The Launch Date is Coming Soon!</div>
@@ -256,8 +265,10 @@ function App() {
                             </div>
                             <div className="top_data">
                                 Weekly giveaways. <br/>
-                                Free mint of the luckybabydragons. <br/>
+                                Begin Mobile game development. <br/>
                                 Community votes for new holder benefits. <br/>
+                                Community game nights. <br/>
+                                Floor sweeps. <br/>
                             </div>
                         </div>
                     </div>
@@ -274,8 +285,10 @@ function App() {
                                 <span className="top_title_num roadmap_font"> </span><span className="top_title">Q2</span>
                             </div>
                             <div className="top_data">
-                                Begin Lucky dragon mobile game development. <br/>
-                                Merch drop. <br/>
+                                Weekly giveaways. <br/>
+                                Community votes for new holder benefits. <br/>
+                                LuckydragonsNFT mobile game released <br/>
+                                Community game nights <br/>
                                 Floor sweeps. <br/>
                             </div>
                         </div>
@@ -293,9 +306,10 @@ function App() {
                                 <span className="top_title_num roadmap_font"> </span><span className="top_title">Q3</span>
                             </div>
                             <div className="top_data">
-                                Luckydragon mobile game drop. <br/>
-                                Creating our own crypto token to where holders will be able to gain yield<br/>
-                                More community votes for holder benefits. <br/>
+                                Weekly giveaways <br/>
+                                Merch drop. <br/>
+                                More community votes for holder benefits  <br/>
+                                Community game nights <br/>
                                 Floor sweeps.
                             </div>
                         </div>
